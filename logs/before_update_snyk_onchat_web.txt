@@ -1,0 +1,63 @@
+
+Testing /app...
+
+Tested 69 dependencies for known issues, found 10 issues, 10 vulnerable paths.
+
+
+Issues to fix by upgrading:
+
+  Upgrade @angular/common@13.2.2 to @angular/common@19.2.16 to fix
+  ✗ Insertion of Sensitive Information Into Sent Data [High Severity][https://security.snyk.io/vuln/SNYK-JS-ANGULARCOMMON-14135651] in @angular/common@13.2.2
+    introduced by @angular/common@13.2.2
+
+  Upgrade @angular/core@13.2.2 to @angular/core@19.2.20 to fix
+  ✗ Cross-site Scripting (XSS) (new) [Low Severity][https://security.snyk.io/vuln/SNYK-JS-ANGULARCORE-15610287] in @angular/core@13.2.2
+    introduced by @angular/core@13.2.2
+  ✗ Cross-site Scripting (XSS) [Low Severity][https://security.snyk.io/vuln/SNYK-JS-ANGULARCORE-14908871] in @angular/core@13.2.2
+    introduced by @angular/core@13.2.2
+  ✗ Cross-site Scripting (XSS) (new) [High Severity][https://security.snyk.io/vuln/SNYK-JS-ANGULARCORE-15353393] in @angular/core@13.2.2
+    introduced by @angular/core@13.2.2
+
+  Upgrade ngx-socketio2@1.0.0 to ngx-socketio2@2.0.1 to fix
+  ✗ Allocation of Resources Without Limits or Throttling (new) [High Severity][https://security.snyk.io/vuln/SNYK-JS-SOCKETIOPARSER-15680278] in socket.io-parser@4.1.2
+    introduced by ngx-socketio2@1.0.0 > socket.io-client@4.4.0 > socket.io-parser@4.1.2
+  ✗ Denial of Service (DoS) [High Severity][https://security.snyk.io/vuln/SNYK-JS-SOCKETIOPARSER-5596892] in socket.io-parser@4.1.2
+    introduced by ngx-socketio2@1.0.0 > socket.io-client@4.4.0 > socket.io-parser@4.1.2
+  ✗ Denial of Service (DoS) [High Severity][https://security.snyk.io/vuln/SNYK-JS-WS-7266574] in ws@8.2.3
+    introduced by ngx-socketio2@1.0.0 > socket.io-client@4.4.0 > engine.io-client@6.1.1 > ws@8.2.3
+  ✗ Improper Input Validation [Critical Severity][https://security.snyk.io/vuln/SNYK-JS-SOCKETIOPARSER-3091012] in socket.io-parser@4.1.2
+    introduced by ngx-socketio2@1.0.0 > socket.io-client@4.4.0 > socket.io-parser@4.1.2
+
+  Upgrade swiper@8.0.3 to swiper@12.1.2 to fix
+  ✗ Prototype Pollution [Critical Severity][https://security.snyk.io/vuln/SNYK-JS-SWIPER-15322690] in swiper@8.0.3
+    introduced by swiper@8.0.3
+
+
+Issues with no direct upgrade or patch:
+  ✗ Improper Neutralization of Special Elements in Output Used by a Downstream Component ('Injection') [Medium Severity][https://security.snyk.io/vuln/SNYK-JS-QUILL-14927397] in quill@1.3.7
+    introduced by quill@1.3.7
+  No upgrade or patch available
+
+
+
+Organization:      arianfarzad
+Package manager:   npm
+Target file:       package-lock.json
+Project name:      onchat
+Open source:       no
+Project path:      /app
+Licenses:          enabled
+
+
+
+ ERROR   Forbidden (SNYK-CLI-0000)
+         The encountered error only provides basic information, please take a look at   
+         the given details. If they do not help to resolve the issue, consider          
+         debugging or consulting support.                                               
+                                                                                        
+           Forbidden                                                                    
+
+Status:  403 Forbidden 
+Docs:    https://docs.snyk.io/scan-with-snyk/error-catalog#snyk-cli-0000 
+                                                                         
+ID:      urn:snyk:interaction:fa428aaf-cf4f-4871-b6c7-3a7df2b3cfb6 

@@ -1,0 +1,126 @@
+npm warn exec The following package was not found and will be installed: http-server@14.1.1
+npm warn deprecated whatwg-encoding@2.0.0: Use @exodus/bytes instead for a more spec-conformant and faster implementation
+Starting up http-server, serving www
+
+http-server version: 14.1.1
+
+http-server settings: 
+CORS: disabled
+Cache: 3600 seconds
+Connection Timeout: 120 seconds
+Directory Listings: visible
+AutoIndex: visible
+Serve GZIP Files: false
+Serve Brotli Files: false
+Default File Extension: none
+
+Available on:
+  http://127.0.0.1:4200
+  http://172.17.0.2:4200
+Hit CTRL-C to stop the server
+
+[2026-03-22T15:31:47.058Z]  "GET /" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+(node:350) [DEP0066] DeprecationWarning: OutgoingMessage.prototype._headers is deprecated
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[2026-03-22T15:31:47.079Z]  "GET /main.4510edf2d77d05aa.js" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[2026-03-22T15:31:47.080Z]  "GET /runtime.c5fc77cfa20de8b8.js" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[2026-03-22T15:31:47.085Z]  "GET /polyfills.8ee57a0bddaaae66.js" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[2026-03-22T15:31:47.093Z]  "GET /styles.4e7834c9195f5dd5.css" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[2026-03-22T15:31:47.160Z]  "GET /ngsw-worker.js" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[2026-03-22T15:31:47.178Z]  "GET /ngsw.json?ngsw-cache-bust=0.24208767421428246" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[2026-03-22T15:31:47.179Z]  "GET /common.b2b470c305118224.js" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[2026-03-22T15:31:47.180Z]  "GET /4174.564836cc17e6ea4a.js" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[2026-03-22T15:31:47.184Z]  "GET /53.65a9d66e88d4edbe.js" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[2026-03-22T15:31:47.186Z]  "GET /3.cab81d22509d8a43.js" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[2026-03-22T15:31:47.193Z]  "GET /assets/audios/boo.mp3" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[2026-03-22T15:31:47.194Z]  "GET /assets/audios/ding-deng.mp3" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[2026-03-22T15:31:47.195Z]  "GET /assets/audios/ring.mp3" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[2026-03-22T15:31:47.242Z]  "GET /1033.4333f4e18bb0edd5.js" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[2026-03-22T15:31:47.251Z]  "GET /1118.dbe3fffb3f056c0c.js" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[2026-03-22T15:31:47.270Z]  "GET /1217.a5ef53c5ea6a3260.js" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[2026-03-22T15:31:47.280Z]  "GET /1366.ccdea6c7a64d6652.js" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[2026-03-22T15:31:47.287Z]  "GET /1536.2e5f561a4bb4c2bf.js" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[2026-03-22T15:31:47.295Z]  "GET /1617.9268eae98843eef6.js" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[2026-03-22T15:31:47.305Z]  "GET /1650.f7c6b7019db64d9f.js" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[2026-03-22T15:31:47.320Z]  "GET /1709.9cf84d33cca9dca6.js" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[2026-03-22T15:31:47.329Z]  "GET /2041.517e84ed90979563.js" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[2026-03-22T15:31:47.335Z]  "GET /2073.7ed5a191dfe444d5.js" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[2026-03-22T15:31:47.342Z]  "GET /2289.a1f375ac44f3bb4b.js" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[2026-03-22T15:31:47.349Z]  "GET /2349.360cbc2dc167cfff.js" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[2026-03-22T15:31:47.358Z]  "GET /2541.b8cc442ae8d5bd81.js" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[2026-03-22T15:31:47.383Z]  "GET /2698.d34dffd6811070ba.js" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[2026-03-22T15:31:47.416Z]  "GET /2773.b0f8d8881d941162.js" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[2026-03-22T15:31:47.424Z]  "GET /2933.688c0cb621b46899.js" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[2026-03-22T15:31:47.442Z]  "GET /3326.58317e9dc55bc372.js" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[2026-03-22T15:31:47.452Z]  "GET /3409.d2c51312a270bf6a.js" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[2026-03-22T15:31:47.459Z]  "GET /3583.db85bde5b545de14.js" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[2026-03-22T15:31:47.465Z]  "GET /36.b36de5e19736a66d.js" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[2026-03-22T15:31:47.472Z]  "GET /3648.bf3504067f3c0d60.js" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[2026-03-22T15:31:47.482Z]  "GET /3700.5eb94ce634aab613.js" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[2026-03-22T15:31:47.488Z]  "GET /3746.d38df7ad6e131720.js" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[2026-03-22T15:31:47.493Z]  "GET /3804.9dcce28914abd6e0.js" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[2026-03-22T15:31:47.504Z]  "GET /388.d6550d6575932e31.js" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[2026-03-22T15:31:47.522Z]  "GET /4330.c867a2ce888ed788.js" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[2026-03-22T15:31:47.530Z]  "GET /4376.c132a634ce705a11.js" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[2026-03-22T15:31:47.537Z]  "GET /438.a06169259f56cb1a.js" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[2026-03-22T15:31:47.545Z]  "GET /4432.54a3e18736618269.js" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[2026-03-22T15:31:47.553Z]  "GET /4518.acd8d2ff40911998.js" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[2026-03-22T15:31:47.558Z]  "GET /4711.e5063651dcec2251.js" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[2026-03-22T15:31:47.572Z]  "GET /4753.9a24da01e5fb77cb.js" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[2026-03-22T15:31:47.578Z]  "GET /4908.9f1f8c69a3ad3d8d.js" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[2026-03-22T15:31:47.584Z]  "GET /4917.7c98d4a47492817e.js" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[2026-03-22T15:31:47.597Z]  "GET /4959.e5c946976e4b62db.js" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[2026-03-22T15:31:47.609Z]  "GET /5168.8329762c1ae6a4d4.js" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[2026-03-22T15:31:47.615Z]  "GET /5211.87257cb2d9973163.js" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[2026-03-22T15:31:47.630Z]  "GET /5349.67b2780073a15742.js" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[2026-03-22T15:31:47.636Z]  "GET /5467.ac64ccc8deb34fb5.js" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[2026-03-22T15:31:47.642Z]  "GET /5514.fa520428ae710a32.js" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[2026-03-22T15:31:47.648Z]  "GET /5652.bf6494eabe95d9f6.js" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[2026-03-22T15:31:47.656Z]  "GET /5836.07df0f63a75d0923.js" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[2026-03-22T15:31:47.663Z]  "GET /6120.23e4b68a9b4cdf1b.js" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[2026-03-22T15:31:47.670Z]  "GET /6217.1f6463455fd69cf7.js" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[2026-03-22T15:31:47.675Z]  "GET /6341.d49d5bd61728014f.js" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[2026-03-22T15:31:47.681Z]  "GET /6560.3ea38bad075bf8b5.js" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[2026-03-22T15:31:47.687Z]  "GET /657.e4ac080195fac1ee.js" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[2026-03-22T15:31:47.693Z]  "GET /7153.1ed8de86113240c6.js" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[2026-03-22T15:31:47.699Z]  "GET /7451.c0c0d0a0b0dba0a1.js" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[2026-03-22T15:31:47.705Z]  "GET /7544.bc539327f30d8ebe.js" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[2026-03-22T15:31:47.712Z]  "GET /7602.c834e96adb4825d4.js" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[2026-03-22T15:31:47.717Z]  "GET /7686.9f5f40360ced554e.js" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[2026-03-22T15:31:47.723Z]  "GET /8034.3413d63bc821f41a.js" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[2026-03-22T15:31:47.729Z]  "GET /8136.e427da6867a61864.js" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[2026-03-22T15:31:47.738Z]  "GET /8177.c89f0d401f1b5586.js" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[2026-03-22T15:31:47.745Z]  "GET /8272.8d8ce42a3020991a.js" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[2026-03-22T15:31:47.753Z]  "GET /8288.5a22001d20e3b7d5.js" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[2026-03-22T15:31:47.759Z]  "GET /8628.4654c3a5bfea9248.js" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[2026-03-22T15:31:47.767Z]  "GET /8939.c2da0de836dae0ad.js" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[2026-03-22T15:31:47.772Z]  "GET /9014.57a06bed72cc4730.js" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[2026-03-22T15:31:47.779Z]  "GET /9016.e65bd1ef11f591a3.js" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[2026-03-22T15:31:47.785Z]  "GET /9091.b6593b6db83bb3cb.js" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[2026-03-22T15:31:47.791Z]  "GET /913.5f4007485409928f.js" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[2026-03-22T15:31:47.797Z]  "GET /9325.ccf857137f8c0060.js" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[2026-03-22T15:31:47.805Z]  "GET /9434.07f2562eea573657.js" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[2026-03-22T15:31:47.810Z]  "GET /9536.367d5fa65777b297.js" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[2026-03-22T15:31:47.817Z]  "GET /9654.e732e202b157f371.js" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[2026-03-22T15:31:47.823Z]  "GET /981.e751f1a07baf4d18.js" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[2026-03-22T15:31:47.833Z]  "GET /9824.03368c3da3b4b741.js" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[2026-03-22T15:31:47.839Z]  "GET /9922.da3fd4cf0b386bb4.js" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[2026-03-22T15:31:47.845Z]  "GET /9958.bd9618ac946f2e92.js" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[2026-03-22T15:31:47.851Z]  "GET /9971.3c98e927689624ba.js" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[2026-03-22T15:31:47.881Z]  "GET /favicon.ico" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[2026-03-22T15:31:47.889Z]  "GET /index.html" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[2026-03-22T15:31:47.972Z]  "GET /manifest.webmanifest" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[2026-03-22T15:31:47.978Z]  "GET /polyfills-core-js.b3eb16f0f64e9b8c.js" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[2026-03-22T15:31:47.992Z]  "GET /polyfills-dom.3a5e3168052f1fc5.js" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[2026-03-22T15:31:48.024Z]  "GET /onchat/auth/info" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[2026-03-22T15:31:48.026Z]  "GET /onchat/auth/info" Error (404): "Not found"
+[2026-03-22T15:31:48.058Z]  "GET /favicon.ico" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[2026-03-22T15:31:48.085Z]  "GET /assets/icons/icon-144x144.png" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[2026-03-22T15:31:48.089Z]  "GET /assets/fonts/Alibaba-Sans-Black/font.bmp" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[2026-03-22T15:31:48.152Z]  "GET /svg/menu.svg" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[2026-03-22T15:31:48.152Z]  "GET /svg/chatbubble-ellipses.svg" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[2026-03-22T15:31:48.152Z]  "GET /svg/people.svg" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[2026-03-22T15:31:48.153Z]  "GET /svg/person.svg" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[2026-03-22T15:31:48.153Z]  "GET /svg/settings-sharp.svg" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[2026-03-22T15:31:48.165Z]  "GET /svg/arrow-down.svg" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+http-server stopped.
