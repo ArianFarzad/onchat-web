@@ -1,0 +1,1539 @@
+{
+  "vulnerabilities": [
+    {
+      "id": "SNYK-JS-ANGULARCOMMON-14135651",
+      "title": "Insertion of Sensitive Information Into Sent Data",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N",
+      "credit": [
+        "AKileX"
+      ],
+      "semver": {
+        "vulnerable": [
+          "<19.2.16",
+          ">=20.0.0-next.0 <20.3.14",
+          ">=21.0.0-next.0 <21.0.1"
+        ]
+      },
+      "exploit": "Not Defined",
+      "fixedIn": [
+        "19.2.16",
+        "20.3.14",
+        "21.0.1"
+      ],
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "js",
+      "severity": "high",
+      "cvssScore": 7.7,
+      "functions": [],
+      "malicious": false,
+      "isDisputed": false,
+      "moduleName": "@angular/common",
+      "references": [
+        {
+          "url": "https://github.com/angular/angular/commit/0276479e7d0e280e0f8d26fa567d3b7aa97a516f",
+          "title": "GitHub Commit"
+        },
+        {
+          "url": "https://github.com/angular/angular/commit/05fe6686a97fa0bcd3cf157805b3612033f975bc",
+          "title": "GitHub Commit"
+        },
+        {
+          "url": "https://github.com/angular/angular/commit/3240d856d942727372a705252f7c8c115394a41e",
+          "title": "GitHub Commit"
+        },
+        {
+          "url": "https://github.com/angular/angular/releases/tag/19.2.16",
+          "title": "GitHub Release"
+        },
+        {
+          "url": "https://github.com/angular/angular/releases/tag/20.3.14",
+          "title": "GitHub Release"
+        },
+        {
+          "url": "https://github.com/angular/angular/releases/tag/21.0.1",
+          "title": "GitHub Release"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "Red Hat",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:L/A:N",
+          "cvssV3BaseScore": 7.1,
+          "modificationTime": "2025-12-06T05:32:00.529281Z"
+        }
+      ],
+      "cvssSources": [
+        {
+          "type": "primary",
+          "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:N/SC:H/SI:N/SA:N",
+          "assigner": "Snyk",
+          "severity": "high",
+          "baseScore": 7.7,
+          "cvssVersion": "4.0",
+          "modificationTime": "2026-05-06T14:03:49.892925Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N",
+          "assigner": "Snyk",
+          "severity": "high",
+          "baseScore": 8.6,
+          "cvssVersion": "3.1",
+          "modificationTime": "2026-05-06T14:03:49.892925Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:L/A:N",
+          "assigner": "Red Hat",
+          "severity": "high",
+          "baseScore": 7.1,
+          "cvssVersion": "3.1",
+          "modificationTime": "2025-12-06T05:32:00.529281Z"
+        }
+      ],
+      "description": "## Overview\n\nAffected versions of this package are vulnerable to Insertion of Sensitive Information Into Sent Data via the `HttpClient` which has a built-in XSRF protection mechanism. An attacker can obtain sensitive authentication tokens by crafting requests using protocol-relative URLs that cause the token to be sent to domains under the attacker's control.\r\n\r\n**Note:**\r\nThis is only exploitable if XSRF protection is enabled and the application allows requests to protocol-relative URLs.\r\n\r\n## Workaround \r\nThis vulnerability can be mitigated by avoiding the use of protocol-relative URLs (those starting with `//`) in requests and ensuring all backend communication URLs are either relative paths or fully qualified, trusted absolute URLs.\n## Remediation\nUpgrade `@angular/common` to version 19.2.16, 20.3.14, 21.0.1 or higher.\n## References\n- [GitHub Commit](https://github.com/angular/angular/commit/0276479e7d0e280e0f8d26fa567d3b7aa97a516f)\n- [GitHub Commit](https://github.com/angular/angular/commit/05fe6686a97fa0bcd3cf157805b3612033f975bc)\n- [GitHub Commit](https://github.com/angular/angular/commit/3240d856d942727372a705252f7c8c115394a41e)\n- [GitHub Release](https://github.com/angular/angular/releases/tag/19.2.16)\n- [GitHub Release](https://github.com/angular/angular/releases/tag/20.3.14)\n- [GitHub Release](https://github.com/angular/angular/releases/tag/21.0.1)\n",
+      "epssDetails": {
+        "percentile": "0.28204",
+        "probability": "0.00106",
+        "modelVersion": "v2025.03.14"
+      },
+      "identifiers": {
+        "CVE": [
+          "CVE-2025-66035"
+        ],
+        "CWE": [
+          "CWE-201"
+        ],
+        "GHSA": [
+          "GHSA-58c5-g7wp-6w37"
+        ]
+      },
+      "packageName": "@angular/common",
+      "proprietary": false,
+      "creationTime": "2025-11-27T07:56:57.805380Z",
+      "functions_new": [],
+      "alternativeIds": [],
+      "disclosureTime": "2025-11-26T22:44:53Z",
+      "exploitDetails": {
+        "sources": [],
+        "maturityLevels": [
+          {
+            "type": "secondary",
+            "level": "Not Defined",
+            "format": "CVSSv3"
+          },
+          {
+            "type": "primary",
+            "level": "Not Defined",
+            "format": "CVSSv4"
+          }
+        ]
+      },
+      "packageManager": "npm",
+      "publicationTime": "2025-11-27T13:17:51.168914Z",
+      "severityBasedOn": "CVSS",
+      "modificationTime": "2026-05-06T14:03:49.892925Z",
+      "socialTrendAlert": false,
+      "severityWithCritical": "high",
+      "from": [
+        "onchat@0.0.1",
+        "@angular/common@13.2.2"
+      ],
+      "upgradePath": [
+        false,
+        "@angular/common@19.2.16"
+      ],
+      "isUpgradable": true,
+      "isPatchable": false,
+      "name": "@angular/common",
+      "version": "13.2.2"
+    },
+    {
+      "id": "SNYK-JS-ANGULARCORE-14908871",
+      "title": "Cross-site Scripting (XSS)",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:N",
+      "credit": [
+        "Shelby Kelley",
+        "George Kalpakas"
+      ],
+      "semver": {
+        "vulnerable": [
+          "<19.2.18",
+          ">=20.0.0-next.0 <20.3.16",
+          ">=21.0.0-next.0 <21.0.7",
+          ">=21.1.0-next.0 <21.1.0-rc.0"
+        ]
+      },
+      "exploit": "Not Defined",
+      "fixedIn": [
+        "19.2.18",
+        "20.3.16",
+        "21.0.7",
+        "21.1.0-rc.0"
+      ],
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "js",
+      "severity": "low",
+      "cvssScore": 2.1,
+      "functions": [],
+      "malicious": false,
+      "isDisputed": false,
+      "moduleName": "@angular/core",
+      "references": [
+        {
+          "url": "https://github.com/angular/angular/pull/66318",
+          "title": "GitHub PR"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "NVD",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+          "cvssV3BaseScore": 6.1,
+          "modificationTime": "2026-02-24T01:18:20.946023Z"
+        },
+        {
+          "assigner": "Red Hat",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:N",
+          "cvssV3BaseScore": 7.3,
+          "modificationTime": "2026-01-14T06:16:25.853211Z"
+        }
+      ],
+      "cvssSources": [
+        {
+          "type": "primary",
+          "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:A/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N",
+          "assigner": "Snyk",
+          "severity": "low",
+          "baseScore": 2.1,
+          "cvssVersion": "4.0",
+          "modificationTime": "2026-02-26T11:34:35.254465Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:N",
+          "assigner": "Snyk",
+          "severity": "medium",
+          "baseScore": 5.4,
+          "cvssVersion": "3.1",
+          "modificationTime": "2026-02-26T11:34:35.254465Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+          "assigner": "NVD",
+          "severity": "medium",
+          "baseScore": 6.1,
+          "cvssVersion": "3.1",
+          "modificationTime": "2026-02-24T01:18:20.946023Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:N",
+          "assigner": "Red Hat",
+          "severity": "high",
+          "baseScore": 7.3,
+          "cvssVersion": "3.1",
+          "modificationTime": "2026-01-14T06:16:25.853211Z"
+        }
+      ],
+      "description": "## Overview\n[@angular/core](https://www.npmjs.com/package/@angular/core) is a package that lets you write client-side web applications as if you had a smarter browser. It also lets you use HTML as your template language and lets you extend HTML’s syntax to express your application’s components clearly and succinctly.\n\nAffected versions of this package are vulnerable to Cross-site Scripting (XSS) in the handling of SVG `<script>` element attributes `href` and `xlink:href` when user-controlled data is bound to these attributes. An attacker can execute arbitrary JavaScript code in the victim's browser by supplying a crafted payload through untrusted data sources that are bound to these attributes. \r\n\r\n##Workaround \r\n\r\nThis vulnerability can be mitigated by avoiding dynamic template bindings for SVG `<script>` elements and strictly validating input against a trusted allowlist before it reaches the template.\n## Details\n\nCross-site scripting (or XSS) is a code vulnerability that occurs when an attacker “injects” a malicious script into an otherwise trusted website. The injected script gets downloaded and executed by the end user’s browser when the user interacts with the compromised website.\n\nThis is done by escaping the context of the web application; the web application then delivers that data to its users along with other trusted dynamic content, without validating it. The browser unknowingly executes malicious script on the client side (through client-side languages; usually JavaScript or HTML)  in order to perform actions that are otherwise typically blocked by the browser’s Same Origin Policy.\n\nInjecting malicious code is the most prevalent manner by which XSS is exploited; for this reason, escaping characters in order to prevent this manipulation is the top method for securing code against this vulnerability.\n\nEscaping means that the application is coded to mark key characters, and particularly key characters included in user input, to prevent those characters from being interpreted in a dangerous context. For example, in HTML, `<` can be coded as  `&lt`; and `>` can be coded as `&gt`; in order to be interpreted and displayed as themselves in text, while within the code itself, they are used for HTML tags. If malicious content is injected into an application that escapes special characters and that malicious content uses `<` and `>` as HTML tags, those characters are nonetheless not interpreted as HTML tags by the browser if they’ve been correctly escaped in the application code and in this way the attempted attack is diverted.\n \nThe most prominent use of XSS is to steal cookies (source: OWASP HttpOnly) and hijack user sessions, but XSS exploits have been used to expose sensitive information, enable access to privileged services and functionality and deliver malware. \n\n### Types of attacks\nThere are a few methods by which XSS can be manipulated:\n\n|Type|Origin|Description|\n|--|--|--|\n|**Stored**|Server|The malicious code is inserted in the application (usually as a link) by the attacker. The code is activated every time a user clicks the link.|\n|**Reflected**|Server|The attacker delivers a malicious link externally from the vulnerable web site application to a user. When clicked, malicious code is sent to the vulnerable web site, which reflects the attack back to the user’s browser.| \n|**DOM-based**|Client|The attacker forces the user’s browser to render a malicious page. The data in the page itself delivers the cross-site scripting data.|\n|**Mutated**| |The attacker injects code that appears safe, but is then rewritten and modified by the browser, while parsing the markup. An example is rebalancing unclosed quotation marks or even adding quotation marks to unquoted parameters.|\n\n### Affected environments\nThe following environments are susceptible to an XSS attack:\n\n* Web servers\n* Application servers\n* Web application environments\n\n### How to prevent\nThis section describes the top best practices designed to specifically protect your code: \n\n* Sanitize data input in an HTTP request before reflecting it back, ensuring all data is validated, filtered or escaped before echoing anything back to the user, such as the values of query parameters during searches. \n* Convert special characters such as `?`, `&`, `/`, `<`, `>` and spaces to their respective HTML or URL encoded equivalents. \n* Give users the option to disable client-side scripts.\n* Redirect invalid requests.\n* Detect simultaneous logins, including those from two separate IP addresses, and invalidate those sessions.\n* Use and enforce a Content Security Policy (source: Wikipedia) to disable any features that might be manipulated for an XSS attack.\n* Read the documentation for any of the libraries referenced in your code to understand which elements allow for embedded HTML.\n\n## Remediation\nUpgrade `@angular/core` to version 19.2.18, 20.3.16, 21.0.7, 21.1.0-rc.0 or higher.\n## References\n- [GitHub PR](https://github.com/angular/angular/pull/66318)\n",
+      "epssDetails": {
+        "percentile": "0.03603",
+        "probability": "0.00016",
+        "modelVersion": "v2025.03.14"
+      },
+      "identifiers": {
+        "CVE": [
+          "CVE-2026-22610"
+        ],
+        "CWE": [
+          "CWE-79"
+        ],
+        "GHSA": [
+          "GHSA-jrmj-c5cx-3cw6"
+        ]
+      },
+      "packageName": "@angular/core",
+      "proprietary": false,
+      "creationTime": "2026-01-09T20:13:57.726391Z",
+      "functions_new": [],
+      "alternativeIds": [],
+      "disclosureTime": "2026-01-09T18:52:14Z",
+      "exploitDetails": {
+        "sources": [],
+        "maturityLevels": [
+          {
+            "type": "secondary",
+            "level": "Not Defined",
+            "format": "CVSSv3"
+          },
+          {
+            "type": "primary",
+            "level": "Not Defined",
+            "format": "CVSSv4"
+          }
+        ]
+      },
+      "packageManager": "npm",
+      "publicationTime": "2026-01-09T20:13:57.942836Z",
+      "severityBasedOn": "CVSS",
+      "modificationTime": "2026-02-26T11:34:35.254465Z",
+      "socialTrendAlert": false,
+      "severityWithCritical": "low",
+      "from": [
+        "onchat@0.0.1",
+        "@angular/core@13.2.2"
+      ],
+      "upgradePath": [
+        false,
+        "@angular/core@19.2.18"
+      ],
+      "isUpgradable": true,
+      "isPatchable": false,
+      "name": "@angular/core",
+      "version": "13.2.2"
+    },
+    {
+      "id": "SNYK-JS-ANGULARCORE-15353393",
+      "title": "Cross-site Scripting (XSS)",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:N",
+      "credit": [
+        "Unknown"
+      ],
+      "semver": {
+        "vulnerable": [
+          "<19.2.19",
+          ">=20.0.0-next.0 <20.3.17",
+          ">=21.0.0-next.0 <21.1.6",
+          ">=21.2.0-next.0 <21.2.0"
+        ]
+      },
+      "exploit": "Not Defined",
+      "fixedIn": [
+        "19.2.19",
+        "20.3.17",
+        "21.1.6",
+        "21.2.0"
+      ],
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "js",
+      "severity": "high",
+      "cvssScore": 7.6,
+      "functions": [],
+      "malicious": false,
+      "isDisputed": false,
+      "moduleName": "@angular/core",
+      "references": [
+        {
+          "url": "https://github.com/angular/angular/commit/747548721d051c21e388a302d20d53fb3ab16367",
+          "title": "GitHub Commit"
+        },
+        {
+          "url": "https://github.com/angular/angular/commit/7d58b798c626bb0e4e5f89ca8affdce4f352b232",
+          "title": "GitHub Commit"
+        },
+        {
+          "url": "https://github.com/angular/angular/commit/7f9de3c118383c09fa8851708c66ec94453a9680",
+          "title": "GitHub Commit"
+        },
+        {
+          "url": "https://github.com/angular/angular/commit/b85830953281ff3a1a77bbfe69019d352d509c93",
+          "title": "GitHub Commit"
+        },
+        {
+          "url": "https://github.com/angular/angular/pull/67183",
+          "title": "GitHub PR"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "NVD",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+          "cvssV3BaseScore": 6.1,
+          "modificationTime": "2026-02-28T01:19:39.843458Z"
+        },
+        {
+          "assigner": "Red Hat",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:L",
+          "cvssV3BaseScore": 7.1,
+          "modificationTime": "2026-02-27T07:59:19.068116Z"
+        }
+      ],
+      "cvssSources": [
+        {
+          "type": "primary",
+          "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:P/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N",
+          "assigner": "Snyk",
+          "severity": "high",
+          "baseScore": 7.6,
+          "cvssVersion": "4.0",
+          "modificationTime": "2026-05-05T14:02:35.221488Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:N",
+          "assigner": "Snyk",
+          "severity": "medium",
+          "baseScore": 6.8,
+          "cvssVersion": "3.1",
+          "modificationTime": "2026-05-05T14:02:35.221488Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+          "assigner": "NVD",
+          "severity": "medium",
+          "baseScore": 6.1,
+          "cvssVersion": "3.1",
+          "modificationTime": "2026-02-28T01:19:39.843458Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:L",
+          "assigner": "Red Hat",
+          "severity": "high",
+          "baseScore": 7.1,
+          "cvssVersion": "3.1",
+          "modificationTime": "2026-02-27T07:59:19.068116Z"
+        }
+      ],
+      "description": "## Overview\n[@angular/core](https://www.npmjs.com/package/@angular/core) is a package that lets you write client-side web applications as if you had a smarter browser. It also lets you use HTML as your template language and lets you extend HTML’s syntax to express your application’s components clearly and succinctly.\n\nAffected versions of this package are vulnerable to Cross-site Scripting (XSS) via the i18n pipeline when HTML from translated content in ICU messages is not properly sanitized. An attacker can execute arbitrary JavaScript in the application origin by compromising the translation file (such as xliff or xtb) and injecting malicious content.\r\n\r\n**Note:**\r\n\r\nThis is only exploitable if the application uses Angular i18n, includes one or more ICU messages, renders an ICU message, and does not defend against script injection via a strict content security policy.\r\n\r\n## Workaround\r\n\r\nThis vulnerability can be mitigated by reviewing and verifying translated content received from untrusted third parties before incorporating it, enabling strict CSP controls to block unauthorized JavaScript, and enabling Trusted Types to enforce proper HTML sanitization.\n## Details\n\nCross-site scripting (or XSS) is a code vulnerability that occurs when an attacker “injects” a malicious script into an otherwise trusted website. The injected script gets downloaded and executed by the end user’s browser when the user interacts with the compromised website.\n\nThis is done by escaping the context of the web application; the web application then delivers that data to its users along with other trusted dynamic content, without validating it. The browser unknowingly executes malicious script on the client side (through client-side languages; usually JavaScript or HTML)  in order to perform actions that are otherwise typically blocked by the browser’s Same Origin Policy.\n\nInjecting malicious code is the most prevalent manner by which XSS is exploited; for this reason, escaping characters in order to prevent this manipulation is the top method for securing code against this vulnerability.\n\nEscaping means that the application is coded to mark key characters, and particularly key characters included in user input, to prevent those characters from being interpreted in a dangerous context. For example, in HTML, `<` can be coded as  `&lt`; and `>` can be coded as `&gt`; in order to be interpreted and displayed as themselves in text, while within the code itself, they are used for HTML tags. If malicious content is injected into an application that escapes special characters and that malicious content uses `<` and `>` as HTML tags, those characters are nonetheless not interpreted as HTML tags by the browser if they’ve been correctly escaped in the application code and in this way the attempted attack is diverted.\n \nThe most prominent use of XSS is to steal cookies (source: OWASP HttpOnly) and hijack user sessions, but XSS exploits have been used to expose sensitive information, enable access to privileged services and functionality and deliver malware. \n\n### Types of attacks\nThere are a few methods by which XSS can be manipulated:\n\n|Type|Origin|Description|\n|--|--|--|\n|**Stored**|Server|The malicious code is inserted in the application (usually as a link) by the attacker. The code is activated every time a user clicks the link.|\n|**Reflected**|Server|The attacker delivers a malicious link externally from the vulnerable web site application to a user. When clicked, malicious code is sent to the vulnerable web site, which reflects the attack back to the user’s browser.| \n|**DOM-based**|Client|The attacker forces the user’s browser to render a malicious page. The data in the page itself delivers the cross-site scripting data.|\n|**Mutated**| |The attacker injects code that appears safe, but is then rewritten and modified by the browser, while parsing the markup. An example is rebalancing unclosed quotation marks or even adding quotation marks to unquoted parameters.|\n\n### Affected environments\nThe following environments are susceptible to an XSS attack:\n\n* Web servers\n* Application servers\n* Web application environments\n\n### How to prevent\nThis section describes the top best practices designed to specifically protect your code: \n\n* Sanitize data input in an HTTP request before reflecting it back, ensuring all data is validated, filtered or escaped before echoing anything back to the user, such as the values of query parameters during searches. \n* Convert special characters such as `?`, `&`, `/`, `<`, `>` and spaces to their respective HTML or URL encoded equivalents. \n* Give users the option to disable client-side scripts.\n* Redirect invalid requests.\n* Detect simultaneous logins, including those from two separate IP addresses, and invalidate those sessions.\n* Use and enforce a Content Security Policy (source: Wikipedia) to disable any features that might be manipulated for an XSS attack.\n* Read the documentation for any of the libraries referenced in your code to understand which elements allow for embedded HTML.\n\n## Remediation\nUpgrade `@angular/core` to version 19.2.19, 20.3.17, 21.1.6, 21.2.0 or higher.\n## References\n- [GitHub Commit](https://github.com/angular/angular/commit/747548721d051c21e388a302d20d53fb3ab16367)\n- [GitHub Commit](https://github.com/angular/angular/commit/7d58b798c626bb0e4e5f89ca8affdce4f352b232)\n- [GitHub Commit](https://github.com/angular/angular/commit/7f9de3c118383c09fa8851708c66ec94453a9680)\n- [GitHub Commit](https://github.com/angular/angular/commit/b85830953281ff3a1a77bbfe69019d352d509c93)\n- [GitHub PR](https://github.com/angular/angular/pull/67183)\n",
+      "epssDetails": {
+        "percentile": "0.16927",
+        "probability": "0.00055",
+        "modelVersion": "v2025.03.14"
+      },
+      "identifiers": {
+        "CVE": [
+          "CVE-2026-27970"
+        ],
+        "CWE": [
+          "CWE-79"
+        ],
+        "GHSA": [
+          "GHSA-prjf-86w9-mfqv"
+        ]
+      },
+      "packageName": "@angular/core",
+      "proprietary": false,
+      "creationTime": "2026-02-26T08:34:48.730200Z",
+      "functions_new": [],
+      "alternativeIds": [],
+      "disclosureTime": "2026-02-26T06:18:27Z",
+      "exploitDetails": {
+        "sources": [],
+        "maturityLevels": [
+          {
+            "type": "secondary",
+            "level": "Not Defined",
+            "format": "CVSSv3"
+          },
+          {
+            "type": "primary",
+            "level": "Not Defined",
+            "format": "CVSSv4"
+          }
+        ]
+      },
+      "packageManager": "npm",
+      "publicationTime": "2026-02-26T14:07:24.012066Z",
+      "severityBasedOn": "CVSS",
+      "modificationTime": "2026-05-05T14:02:35.221488Z",
+      "socialTrendAlert": false,
+      "severityWithCritical": "high",
+      "from": [
+        "onchat@0.0.1",
+        "@angular/core@13.2.2"
+      ],
+      "upgradePath": [
+        false,
+        "@angular/core@19.2.19"
+      ],
+      "isUpgradable": true,
+      "isPatchable": false,
+      "name": "@angular/core",
+      "version": "13.2.2"
+    },
+    {
+      "id": "SNYK-JS-ANGULARCORE-15610287",
+      "title": "Cross-site Scripting (XSS)",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:H/PR:L/UI:R/S:C/C:L/I:L/A:N",
+      "credit": [
+        "Unknown"
+      ],
+      "semver": {
+        "vulnerable": [
+          "<19.2.20",
+          ">=20.0.0-next.0 <20.3.18",
+          ">=21.0.0-next.0 <21.2.3",
+          ">=22.0.0-next.0 <22.0.0-next.2"
+        ]
+      },
+      "exploit": "Not Defined",
+      "fixedIn": [
+        "19.2.20",
+        "20.3.18",
+        "21.2.3",
+        "22.0.0-next.2"
+      ],
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "js",
+      "severity": "low",
+      "cvssScore": 2.1,
+      "functions": [],
+      "malicious": false,
+      "isDisputed": false,
+      "moduleName": "@angular/core",
+      "references": [
+        {
+          "url": "https://github.com/angular/angular/commit/02fbf08890ec6ac2efb6c2ec4f17e56497cb81d2",
+          "title": "GitHub Commit"
+        },
+        {
+          "url": "https://github.com/angular/angular/commit/224e60ecb1b90115baa702f1c06edc1d64d86187",
+          "title": "GitHub Commit"
+        },
+        {
+          "url": "https://github.com/angular/angular/commit/5be912eb55fe88e8621e2ce82470d51b7d950ceb",
+          "title": "GitHub Commit"
+        },
+        {
+          "url": "https://github.com/angular/angular/commit/621c7071adffbe5dd45a5c954b6b6138e0870844",
+          "title": "GitHub Commit"
+        },
+        {
+          "url": "https://github.com/angular/angular/commit/626bc8bc20e485cad2094c4a5d9417fb9a71dda8",
+          "title": "GitHub Commit"
+        },
+        {
+          "url": "https://github.com/angular/angular/commit/78dea55351fb305b33a919c43a6b363137eca166",
+          "title": "GitHub Commit"
+        },
+        {
+          "url": "https://github.com/angular/angular/commit/8630319f74c9575a21693d875cc7d5252516146d",
+          "title": "GitHub Commit"
+        },
+        {
+          "url": "https://github.com/angular/angular/commit/d1dcd16c5b40291aa3fa2dc84d22842cd657b201",
+          "title": "GitHub Commit"
+        },
+        {
+          "url": "https://github.com/angular/angular/commit/de0eb4c6566011e1a34d529a273ec3d5b6bf17d5",
+          "title": "GitHub Commit"
+        },
+        {
+          "url": "https://github.com/angular/angular/commit/ed2d324f9cc12aab6cfa0569ef10b73243a62c65",
+          "title": "GitHub Commit"
+        },
+        {
+          "url": "https://github.com/angular/angular/pull/67541",
+          "title": "GitHub PR"
+        },
+        {
+          "url": "https://github.com/angular/angular/pull/67561",
+          "title": "GitHub PR"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "Red Hat",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:L",
+          "cvssV3BaseScore": 6.3,
+          "modificationTime": "2026-03-18T19:30:58.531034Z"
+        },
+        {
+          "assigner": "NVD",
+          "severity": "critical",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:H",
+          "cvssV3BaseScore": 9,
+          "modificationTime": "2026-05-01T01:17:40.723278Z"
+        }
+      ],
+      "cvssSources": [
+        {
+          "type": "primary",
+          "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:P/VC:N/VI:L/VA:N/SC:L/SI:L/SA:N",
+          "assigner": "Snyk",
+          "severity": "low",
+          "baseScore": 2.1,
+          "cvssVersion": "4.0",
+          "modificationTime": "2026-05-08T13:13:32.823608Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:R/S:C/C:L/I:L/A:N",
+          "assigner": "Snyk",
+          "severity": "medium",
+          "baseScore": 4.4,
+          "cvssVersion": "3.1",
+          "modificationTime": "2026-05-08T13:13:32.823608Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:L",
+          "assigner": "Red Hat",
+          "severity": "medium",
+          "baseScore": 6.3,
+          "cvssVersion": "3.1",
+          "modificationTime": "2026-03-18T19:30:58.531034Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:H",
+          "assigner": "NVD",
+          "severity": "critical",
+          "baseScore": 9,
+          "cvssVersion": "3.1",
+          "modificationTime": "2026-05-01T01:17:40.723278Z"
+        }
+      ],
+      "description": "## Overview\n[@angular/core](https://www.npmjs.com/package/@angular/core) is a package that lets you write client-side web applications as if you had a smarter browser. It also lets you use HTML as your template language and lets you extend HTML’s syntax to express your application’s components clearly and succinctly.\n\nAffected versions of this package are vulnerable to Cross-site Scripting (XSS) in the handling of `internationalized attribute` bindings. An attacker can execute arbitrary scripts in the context of the application by injecting malicious input into attributes such as `href`, `src`, or similar, when these are marked for internationalization and bound to unsanitized user data. \r\n\r\n**Note:** This is only exploitable if unsanitized user input is bound to a security-sensitive attribute that is also marked with an `i18n-<attribute>` directive on the same element.\r\n\r\n## Workaround \r\n\r\nThis vulnerability can be mitigated by explicitly sanitizing the input using Angular's `DomSanitizer`.\n## Details\n\nCross-site scripting (or XSS) is a code vulnerability that occurs when an attacker “injects” a malicious script into an otherwise trusted website. The injected script gets downloaded and executed by the end user’s browser when the user interacts with the compromised website.\n\nThis is done by escaping the context of the web application; the web application then delivers that data to its users along with other trusted dynamic content, without validating it. The browser unknowingly executes malicious script on the client side (through client-side languages; usually JavaScript or HTML)  in order to perform actions that are otherwise typically blocked by the browser’s Same Origin Policy.\n\nInjecting malicious code is the most prevalent manner by which XSS is exploited; for this reason, escaping characters in order to prevent this manipulation is the top method for securing code against this vulnerability.\n\nEscaping means that the application is coded to mark key characters, and particularly key characters included in user input, to prevent those characters from being interpreted in a dangerous context. For example, in HTML, `<` can be coded as  `&lt`; and `>` can be coded as `&gt`; in order to be interpreted and displayed as themselves in text, while within the code itself, they are used for HTML tags. If malicious content is injected into an application that escapes special characters and that malicious content uses `<` and `>` as HTML tags, those characters are nonetheless not interpreted as HTML tags by the browser if they’ve been correctly escaped in the application code and in this way the attempted attack is diverted.\n \nThe most prominent use of XSS is to steal cookies (source: OWASP HttpOnly) and hijack user sessions, but XSS exploits have been used to expose sensitive information, enable access to privileged services and functionality and deliver malware. \n\n### Types of attacks\nThere are a few methods by which XSS can be manipulated:\n\n|Type|Origin|Description|\n|--|--|--|\n|**Stored**|Server|The malicious code is inserted in the application (usually as a link) by the attacker. The code is activated every time a user clicks the link.|\n|**Reflected**|Server|The attacker delivers a malicious link externally from the vulnerable web site application to a user. When clicked, malicious code is sent to the vulnerable web site, which reflects the attack back to the user’s browser.| \n|**DOM-based**|Client|The attacker forces the user’s browser to render a malicious page. The data in the page itself delivers the cross-site scripting data.|\n|**Mutated**| |The attacker injects code that appears safe, but is then rewritten and modified by the browser, while parsing the markup. An example is rebalancing unclosed quotation marks or even adding quotation marks to unquoted parameters.|\n\n### Affected environments\nThe following environments are susceptible to an XSS attack:\n\n* Web servers\n* Application servers\n* Web application environments\n\n### How to prevent\nThis section describes the top best practices designed to specifically protect your code: \n\n* Sanitize data input in an HTTP request before reflecting it back, ensuring all data is validated, filtered or escaped before echoing anything back to the user, such as the values of query parameters during searches. \n* Convert special characters such as `?`, `&`, `/`, `<`, `>` and spaces to their respective HTML or URL encoded equivalents. \n* Give users the option to disable client-side scripts.\n* Redirect invalid requests.\n* Detect simultaneous logins, including those from two separate IP addresses, and invalidate those sessions.\n* Use and enforce a Content Security Policy (source: Wikipedia) to disable any features that might be manipulated for an XSS attack.\n* Read the documentation for any of the libraries referenced in your code to understand which elements allow for embedded HTML.\n\n## Remediation\nUpgrade `@angular/core` to version 19.2.20, 20.3.18, 21.2.3, 22.0.0-next.2 or higher.\n## References\n- [GitHub Commit](https://github.com/angular/angular/commit/02fbf08890ec6ac2efb6c2ec4f17e56497cb81d2)\n- [GitHub Commit](https://github.com/angular/angular/commit/224e60ecb1b90115baa702f1c06edc1d64d86187)\n- [GitHub Commit](https://github.com/angular/angular/commit/5be912eb55fe88e8621e2ce82470d51b7d950ceb)\n- [GitHub Commit](https://github.com/angular/angular/commit/621c7071adffbe5dd45a5c954b6b6138e0870844)\n- [GitHub Commit](https://github.com/angular/angular/commit/626bc8bc20e485cad2094c4a5d9417fb9a71dda8)\n- [GitHub Commit](https://github.com/angular/angular/commit/78dea55351fb305b33a919c43a6b363137eca166)\n- [GitHub Commit](https://github.com/angular/angular/commit/8630319f74c9575a21693d875cc7d5252516146d)\n- [GitHub Commit](https://github.com/angular/angular/commit/d1dcd16c5b40291aa3fa2dc84d22842cd657b201)\n- [GitHub Commit](https://github.com/angular/angular/commit/de0eb4c6566011e1a34d529a273ec3d5b6bf17d5)\n- [GitHub Commit](https://github.com/angular/angular/commit/ed2d324f9cc12aab6cfa0569ef10b73243a62c65)\n- [GitHub PR](https://github.com/angular/angular/pull/67541)\n- [GitHub PR](https://github.com/angular/angular/pull/67561)\n",
+      "epssDetails": {
+        "percentile": "0.14030",
+        "probability": "0.00046",
+        "modelVersion": "v2025.03.14"
+      },
+      "identifiers": {
+        "CVE": [
+          "CVE-2026-32635"
+        ],
+        "CWE": [
+          "CWE-79"
+        ],
+        "GHSA": [
+          "GHSA-g93w-mfhg-p222"
+        ]
+      },
+      "packageName": "@angular/core",
+      "proprietary": false,
+      "creationTime": "2026-03-15T12:00:38.371846Z",
+      "functions_new": [],
+      "alternativeIds": [],
+      "disclosureTime": "2026-03-13T20:56:18Z",
+      "exploitDetails": {
+        "sources": [],
+        "maturityLevels": [
+          {
+            "type": "secondary",
+            "level": "Not Defined",
+            "format": "CVSSv3"
+          },
+          {
+            "type": "primary",
+            "level": "Not Defined",
+            "format": "CVSSv4"
+          }
+        ]
+      },
+      "packageManager": "npm",
+      "publicationTime": "2026-03-15T13:46:36.157470Z",
+      "severityBasedOn": "CVSS",
+      "modificationTime": "2026-05-08T13:13:32.823608Z",
+      "socialTrendAlert": false,
+      "severityWithCritical": "low",
+      "from": [
+        "onchat@0.0.1",
+        "@angular/core@13.2.2"
+      ],
+      "upgradePath": [
+        false,
+        "@angular/core@19.2.20"
+      ],
+      "isUpgradable": true,
+      "isPatchable": false,
+      "name": "@angular/core",
+      "version": "13.2.2"
+    },
+    {
+      "id": "SNYK-JS-SOCKETIOPARSER-15680278",
+      "title": "Allocation of Resources Without Limits or Throttling",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "credit": [
+        "darrachequesne"
+      ],
+      "semver": {
+        "vulnerable": [
+          "<3.3.5",
+          ">=3.4.0 <3.4.4",
+          ">=4.0.0 <4.2.6"
+        ]
+      },
+      "exploit": "Not Defined",
+      "fixedIn": [
+        "3.3.5",
+        "3.4.4",
+        "4.2.6"
+      ],
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "js",
+      "severity": "high",
+      "cvssScore": 8.7,
+      "functions": [],
+      "malicious": false,
+      "isDisputed": false,
+      "moduleName": "socket.io-parser",
+      "references": [
+        {
+          "url": "https://github.com/socketio/socket.io/commit/719f9ebab0772ffb882bd614b387e585c1aa75d4",
+          "title": "GitHub Commit"
+        },
+        {
+          "url": "https://github.com/socketio/socket.io/commit/b25738c416c4e32fbff62ee182afa8f6d0dacf78",
+          "title": "GitHub Commit"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "NVD",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 7.5,
+          "modificationTime": "2026-04-15T01:13:54.237313Z"
+        }
+      ],
+      "cvssSources": [
+        {
+          "type": "primary",
+          "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N",
+          "assigner": "Snyk",
+          "severity": "high",
+          "baseScore": 8.7,
+          "cvssVersion": "4.0",
+          "modificationTime": "2026-04-15T01:13:54.237313Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "assigner": "Snyk",
+          "severity": "high",
+          "baseScore": 7.5,
+          "cvssVersion": "3.1",
+          "modificationTime": "2026-04-15T01:13:54.237313Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "assigner": "NVD",
+          "severity": "high",
+          "baseScore": 7.5,
+          "cvssVersion": "3.1",
+          "modificationTime": "2026-04-15T01:13:54.237313Z"
+        }
+      ],
+      "description": "## Overview\n[socket.io-parser](https://www.npmjs.org/package/socket.io-parser) is a socket.io protocol parser\n\nAffected versions of this package are vulnerable to Allocation of Resources Without Limits or Throttling in the `Decoder` class, which accepts an unlimited number of binary attachments. An attacker can exploit this to exhaust server memory.\n## Remediation\nUpgrade `socket.io-parser` to version 3.3.5, 3.4.4, 4.2.6 or higher.\n## References\n- [GitHub Commit](https://github.com/socketio/socket.io/commit/719f9ebab0772ffb882bd614b387e585c1aa75d4)\n- [GitHub Commit](https://github.com/socketio/socket.io/commit/b25738c416c4e32fbff62ee182afa8f6d0dacf78)\n",
+      "epssDetails": {
+        "percentile": "0.18697",
+        "probability": "0.00060",
+        "modelVersion": "v2025.03.14"
+      },
+      "identifiers": {
+        "CVE": [
+          "CVE-2026-33151"
+        ],
+        "CWE": [
+          "CWE-754",
+          "CWE-770"
+        ],
+        "GHSA": [
+          "GHSA-677m-j7p3-52f9"
+        ]
+      },
+      "packageName": "socket.io-parser",
+      "proprietary": false,
+      "creationTime": "2026-03-18T11:01:53.077684Z",
+      "functions_new": [],
+      "alternativeIds": [],
+      "disclosureTime": "2026-03-17T15:05:14Z",
+      "exploitDetails": {
+        "sources": [],
+        "maturityLevels": [
+          {
+            "type": "secondary",
+            "level": "Not Defined",
+            "format": "CVSSv3"
+          },
+          {
+            "type": "primary",
+            "level": "Not Defined",
+            "format": "CVSSv4"
+          }
+        ]
+      },
+      "packageManager": "npm",
+      "publicationTime": "2026-03-18T11:01:53.366840Z",
+      "severityBasedOn": "CVSS",
+      "modificationTime": "2026-04-15T01:13:54.237313Z",
+      "socialTrendAlert": false,
+      "severityWithCritical": "high",
+      "from": [
+        "onchat@0.0.1",
+        "ngx-socketio2@1.0.0",
+        "socket.io-client@4.4.0",
+        "socket.io-parser@4.1.2"
+      ],
+      "upgradePath": [
+        false,
+        "ngx-socketio2@2.0.1",
+        "socket.io-client@4.8.3",
+        "socket.io-parser@4.2.6"
+      ],
+      "isUpgradable": true,
+      "isPatchable": false,
+      "name": "socket.io-parser",
+      "version": "4.1.2"
+    },
+    {
+      "id": "SNYK-JS-SOCKETIOPARSER-3091012",
+      "title": "Improper Input Validation",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "credit": [
+        "Thomas Rinsma"
+      ],
+      "semver": {
+        "vulnerable": [
+          "<3.3.3",
+          ">=3.4.0 <3.4.2",
+          ">=4.0.0 <4.0.5",
+          ">=4.1.0 <4.2.1"
+        ]
+      },
+      "exploit": "Not Defined",
+      "fixedIn": [
+        "3.3.3",
+        "3.4.2",
+        "4.0.5",
+        "4.2.1"
+      ],
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "js",
+      "severity": "critical",
+      "cvssScore": 9.8,
+      "functions": [],
+      "malicious": false,
+      "isDisputed": false,
+      "moduleName": "socket.io-parser",
+      "references": [
+        {
+          "url": "https://github.com/socketio/socket.io-parser/commit/04d23cecafe1b859fb03e0cbf6ba3b74dff56d14",
+          "title": "GitHub Commit"
+        },
+        {
+          "url": "https://github.com/socketio/socket.io-parser/commit/b559f050ee02bd90bd853b9823f8de7fa94a80d4",
+          "title": "GitHub Commit"
+        },
+        {
+          "url": "https://github.com/socketio/socket.io-parser/commit/b5d0cb7dc56a0601a09b056beaeeb0e43b160050",
+          "title": "GitHub Commit"
+        },
+        {
+          "url": "https://github.com/socketio/socket.io-parser/commit/fb21e422fc193b34347395a33e0f625bebc09983",
+          "title": "GitHub Commit"
+        },
+        {
+          "url": "https://csirt.divd.nl/cases/DIVD-2022-00045",
+          "title": "Vulnerability Report"
+        },
+        {
+          "url": "https://csirt.divd.nl/cves/CVE-2022-2421",
+          "title": "Vulnerability Report"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "NVD",
+          "severity": "critical",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "cvssV3BaseScore": 9.8,
+          "modificationTime": "2024-03-11T09:52:13.591982Z"
+        }
+      ],
+      "cvssSources": [
+        {
+          "type": "primary",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "assigner": "Snyk",
+          "severity": "critical",
+          "baseScore": 9.8,
+          "cvssVersion": "3.1",
+          "modificationTime": "2026-05-09T14:04:34.678952Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "assigner": "NVD",
+          "severity": "critical",
+          "baseScore": 9.8,
+          "cvssVersion": "3.1",
+          "modificationTime": "2024-03-11T09:52:13.591982Z"
+        }
+      ],
+      "description": "## Overview\n\n[socket.io-parser](https://www.npmjs.org/package/socket.io-parser) is a socket.io protocol parser\n\n\nAffected versions of this package are vulnerable to Improper Input Validation.\nwhen parsing attachments containing untrusted user input. Attackers can overwrite the `_placeholder` object to place references to functions in query objects.\r\n\r\n## PoC\r\n\r\n```js\r\nconst decoder = new Decoder();\r\n\r\ndecoder.on(\"decoded\", (packet) => {\r\n  console.log(packet.data); // prints [ 'hello', [Function: splice] ]\r\n})\r\n\r\ndecoder.add('51-[\"hello\",{\"_placeholder\":true,\"num\":\"splice\"}]');\r\ndecoder.add(Buffer.from(\"world\"));\r\n```\n\n## Remediation\n\nUpgrade `socket.io-parser` to version 3.3.3, 3.4.2, 4.0.5, 4.2.1 or higher.\n\n\n## References\n\n- [GitHub Commit](https://github.com/socketio/socket.io-parser/commit/04d23cecafe1b859fb03e0cbf6ba3b74dff56d14)\n\n- [GitHub Commit](https://github.com/socketio/socket.io-parser/commit/b559f050ee02bd90bd853b9823f8de7fa94a80d4)\n\n- [GitHub Commit](https://github.com/socketio/socket.io-parser/commit/b5d0cb7dc56a0601a09b056beaeeb0e43b160050)\n\n- [GitHub Commit](https://github.com/socketio/socket.io-parser/commit/fb21e422fc193b34347395a33e0f625bebc09983)\n\n- [Vulnerability Report](https://csirt.divd.nl/cases/DIVD-2022-00045)\n\n- [Vulnerability Report](https://csirt.divd.nl/cves/CVE-2022-2421)\n",
+      "epssDetails": {
+        "percentile": "0.77431",
+        "probability": "0.01027",
+        "modelVersion": "v2025.03.14"
+      },
+      "identifiers": {
+        "CVE": [
+          "CVE-2022-2421"
+        ],
+        "CWE": [
+          "CWE-89"
+        ],
+        "GHSA": [
+          "GHSA-qm95-pgcg-qqfq"
+        ]
+      },
+      "packageName": "socket.io-parser",
+      "proprietary": false,
+      "creationTime": "2022-10-30T11:44:09.888401Z",
+      "functions_new": [],
+      "alternativeIds": [],
+      "disclosureTime": "2022-10-26T12:57:39Z",
+      "exploitDetails": {
+        "sources": [],
+        "maturityLevels": [
+          {
+            "type": "secondary",
+            "level": "Not Defined",
+            "format": "CVSSv3"
+          },
+          {
+            "type": "primary",
+            "level": "Not Defined",
+            "format": "CVSSv4"
+          }
+        ]
+      },
+      "packageManager": "npm",
+      "publicationTime": "2022-10-30T12:46:06.853890Z",
+      "severityBasedOn": "CVSS",
+      "modificationTime": "2026-05-09T14:04:34.678952Z",
+      "socialTrendAlert": false,
+      "severityWithCritical": "critical",
+      "from": [
+        "onchat@0.0.1",
+        "ngx-socketio2@1.0.0",
+        "socket.io-client@4.4.0",
+        "socket.io-parser@4.1.2"
+      ],
+      "upgradePath": [
+        false,
+        "ngx-socketio2@2.0.1",
+        "socket.io-client@4.8.3",
+        "socket.io-parser@4.2.6"
+      ],
+      "isUpgradable": true,
+      "isPatchable": false,
+      "name": "socket.io-parser",
+      "version": "4.1.2"
+    },
+    {
+      "id": "SNYK-JS-SOCKETIOPARSER-5596892",
+      "title": "Denial of Service (DoS)",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "credit": [
+        "rafax00"
+      ],
+      "semver": {
+        "vulnerable": [
+          ">=3.4.0 <3.4.3",
+          ">=4.0.0 <4.2.3"
+        ]
+      },
+      "exploit": "Not Defined",
+      "fixedIn": [
+        "3.4.3",
+        "4.2.3"
+      ],
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "js",
+      "severity": "high",
+      "cvssScore": 7.5,
+      "functions": [],
+      "malicious": false,
+      "isDisputed": false,
+      "moduleName": "socket.io-parser",
+      "references": [
+        {
+          "url": "https://github.com/socketio/socket.io-parser/commit/2dc3c92622dad113b8676be06f23b1ed46b02ced",
+          "title": "GitHub Commit"
+        },
+        {
+          "url": "https://github.com/socketio/socket.io-parser/commit/3b78117bf6ba7e99d7a5cfc1ba54d0477554a7f3",
+          "title": "GitHub Commit"
+        },
+        {
+          "url": "https://github.com/socketio/socket.io-parser/releases/tag/3.4.3",
+          "title": "GitHub Release"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "NVD",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 7.5,
+          "modificationTime": "2024-03-11T09:53:18.116269Z"
+        }
+      ],
+      "cvssSources": [
+        {
+          "type": "primary",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "assigner": "Snyk",
+          "severity": "high",
+          "baseScore": 7.5,
+          "cvssVersion": "3.1",
+          "modificationTime": "2026-05-05T14:02:41.197919Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "assigner": "NVD",
+          "severity": "high",
+          "baseScore": 7.5,
+          "cvssVersion": "3.1",
+          "modificationTime": "2024-03-11T09:53:18.116269Z"
+        }
+      ],
+      "description": "## Overview\n[socket.io-parser](https://www.npmjs.org/package/socket.io-parser) is a socket.io protocol parser\n\nAffected versions of this package are vulnerable to Denial of Service (DoS) due to insufficient validation when decoding a packet. An attacker can send an event with a name like `'2[{\"toString\":\"foo\"}]'` to trigger an uncaught exception and a crash, like the below.\r\n\r\n```\r\nTypeError: Cannot convert object to primitive value\r\n       at Socket.emit (node:events:507:25)\r\n       at .../node_modules/socket.io/lib/socket.js:531:14\r\n```\n\n## Details\n\nDenial of Service (DoS) describes a family of attacks, all aimed at making a system inaccessible to its intended and legitimate users.\n\nUnlike other vulnerabilities, DoS attacks usually do not aim at breaching security. Rather, they are focused on making websites and services unavailable to genuine users resulting in downtime.\n\nOne popular Denial of Service vulnerability is DDoS (a Distributed Denial of Service), an attack that attempts to clog network pipes to the system by generating a large volume of traffic from many machines.\n\nWhen it comes to open source libraries, DoS vulnerabilities allow attackers to trigger such a crash or crippling of the service by using a flaw either in the application code or from the use of open source libraries.\n\nTwo common types of DoS vulnerabilities:\n\n* High CPU/Memory Consumption- An attacker sending crafted requests that could cause the system to take a disproportionate amount of time to process. For example, [commons-fileupload:commons-fileupload](https://security.snyk.io/vuln/SNYK-JAVA-COMMONSFILEUPLOAD-30082).\n\n* Crash - An attacker sending crafted requests that could cause the system to crash. For Example,  [npm `ws` package](https://snyk.io/vuln/npm:ws:20171108)\n\n## Remediation\nUpgrade `socket.io-parser` to version 3.4.3, 4.2.3 or higher.\n## References\n- [GitHub Commit](https://github.com/socketio/socket.io-parser/commit/2dc3c92622dad113b8676be06f23b1ed46b02ced)\n- [GitHub Commit](https://github.com/socketio/socket.io-parser/commit/3b78117bf6ba7e99d7a5cfc1ba54d0477554a7f3)\n- [GitHub Release](https://github.com/socketio/socket.io-parser/releases/tag/3.4.3)\n",
+      "epssDetails": {
+        "percentile": "0.54104",
+        "probability": "0.00310",
+        "modelVersion": "v2025.03.14"
+      },
+      "identifiers": {
+        "CVE": [
+          "CVE-2023-32695"
+        ],
+        "CWE": [
+          "CWE-400"
+        ],
+        "GHSA": [
+          "GHSA-cqmj-92xf-r6r9"
+        ]
+      },
+      "packageName": "socket.io-parser",
+      "proprietary": false,
+      "creationTime": "2023-05-24T07:36:34.088298Z",
+      "functions_new": [],
+      "alternativeIds": [],
+      "disclosureTime": "2023-05-23T19:55:13Z",
+      "exploitDetails": {
+        "sources": [],
+        "maturityLevels": [
+          {
+            "type": "secondary",
+            "level": "Not Defined",
+            "format": "CVSSv3"
+          },
+          {
+            "type": "primary",
+            "level": "Not Defined",
+            "format": "CVSSv4"
+          }
+        ]
+      },
+      "packageManager": "npm",
+      "publicationTime": "2023-05-24T07:39:19.358296Z",
+      "severityBasedOn": "CVSS",
+      "modificationTime": "2026-05-05T14:02:41.197919Z",
+      "socialTrendAlert": false,
+      "severityWithCritical": "high",
+      "from": [
+        "onchat@0.0.1",
+        "ngx-socketio2@1.0.0",
+        "socket.io-client@4.4.0",
+        "socket.io-parser@4.1.2"
+      ],
+      "upgradePath": [
+        false,
+        "ngx-socketio2@2.0.1",
+        "socket.io-client@4.8.3",
+        "socket.io-parser@4.2.6"
+      ],
+      "isUpgradable": true,
+      "isPatchable": false,
+      "name": "socket.io-parser",
+      "version": "4.1.2"
+    },
+    {
+      "id": "SNYK-JS-SWIPER-15322690",
+      "title": "Prototype Pollution",
+      "CVSSv3": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "credit": [
+        "Kevin George Leo",
+        "Abdullah AlHamdan",
+        "Alexi Turcotte"
+      ],
+      "semver": {
+        "vulnerable": [
+          ">=6.5.1 <12.1.2"
+        ]
+      },
+      "exploit": "Not Defined",
+      "fixedIn": [
+        "12.1.2"
+      ],
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "js",
+      "severity": "critical",
+      "cvssScore": 9.4,
+      "functions": [],
+      "malicious": false,
+      "isDisputed": false,
+      "moduleName": "swiper",
+      "references": [
+        {
+          "url": "https://github.com/nolimits4web/swiper/commit/d3e663322a13043ca63aaba235d8cf3900e0c8cf",
+          "title": "GitHub Commit"
+        },
+        {
+          "url": "https://github.com/nolimits4web/swiper/releases/tag/v12.1.2",
+          "title": "GitHub Release"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "NVD",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+          "cvssV3BaseScore": 7.8,
+          "modificationTime": "2026-02-25T01:17:44.453616Z"
+        }
+      ],
+      "cvssSources": [
+        {
+          "type": "primary",
+          "vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H/E:P",
+          "assigner": "Snyk",
+          "severity": "critical",
+          "baseScore": 9.4,
+          "cvssVersion": "4.0",
+          "modificationTime": "2026-02-26T11:54:09.265666Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+          "assigner": "Snyk",
+          "severity": "high",
+          "baseScore": 7.8,
+          "cvssVersion": "3.1",
+          "modificationTime": "2026-02-26T11:54:09.265666Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+          "assigner": "NVD",
+          "severity": "high",
+          "baseScore": 7.8,
+          "cvssVersion": "3.1",
+          "modificationTime": "2026-02-25T01:17:44.453616Z"
+        }
+      ],
+      "description": "## Overview\n[swiper](https://www.npmjs.org/package/swiper) is a Most modern mobile touch slider and framework with hardware accelerated transitions\n\nAffected versions of this package are vulnerable to Prototype Pollution via the `extendDefaults` function. An attacker can modify the prototype of global objects by supplying crafted input, potentially leading to authentication bypass, denial of service, or remote code execution if polluted properties are used in sensitive operations.\n## PoC\n```javascript\r\nvar swiper = require('swiper');\r\nArray.prototype.indexOf = () => -1;        \r\nlet obj = {};\r\nvar malicious_payload = '{\"__proto__\":{\"polluted\":\"yes\"}}';\r\nconsole.log({}.polluted);\r\nswiper.default.extendDefaults(JSON.parse(malicious_payload));\r\nconsole.log({}.polluted);  // prints yes -> indicating that the patch was bypassed and prototype pollution occurred\r\n```\n\n## Details\n\nPrototype Pollution is a vulnerability affecting JavaScript. Prototype Pollution refers to the ability to inject properties into existing JavaScript language construct prototypes, such as objects. JavaScript allows all Object attributes to be altered, including their magical attributes such as `__proto__`, `constructor` and `prototype`. An attacker manipulates these attributes to overwrite, or pollute, a JavaScript application object prototype of the base object by injecting other values.  Properties on the `Object.prototype` are then inherited by all the JavaScript objects through the prototype chain. When that happens, this leads to either denial of service by triggering JavaScript exceptions, or it tampers with the application source code to force the code path that the attacker injects, thereby leading to remote code execution.\n\nThere are two main ways in which the pollution of prototypes occurs:\n\n-   Unsafe `Object` recursive merge\n    \n-   Property definition by path\n    \n\n### Unsafe Object recursive merge\n\nThe logic of a vulnerable recursive merge function follows the following high-level model:\n```\nmerge (target, source)\n\n  foreach property of source\n\n    if property exists and is an object on both the target and the source\n\n      merge(target[property], source[property])\n\n    else\n\n      target[property] = source[property]\n```\n<br>  \n\nWhen the source object contains a property named `__proto__` defined with `Object.defineProperty()` , the condition that checks if the property exists and is an object on both the target and the source passes and the merge recurses with the target, being the prototype of `Object` and the source of `Object` as defined by the attacker. Properties are then copied on the `Object` prototype.\n\nClone operations are a special sub-class of unsafe recursive merges, which occur when a recursive merge is conducted on an empty object: `merge({},source)`.\n\n`lodash` and `Hoek` are examples of libraries susceptible to recursive merge attacks.\n\n### Property definition by path\n\nThere are a few JavaScript libraries that use an API to define property values on an object based on a given path. The function that is generally affected contains this signature: `theFunction(object, path, value)`\n\nIf the attacker can control the value of “path”, they can set this value to `__proto__.myValue`. `myValue` is then assigned to the prototype of the class of the object.\n\n## Types of attacks\n\nThere are a few methods by which Prototype Pollution can be manipulated:\n\n| Type |Origin  |Short description |\n|--|--|--|\n| **Denial of service (DoS)**|Client  |This is the most likely attack. <br>DoS occurs when `Object` holds generic functions that are implicitly called for various operations (for example, `toString` and `valueOf`). <br> The attacker pollutes `Object.prototype.someattr` and alters its state to an unexpected value such as `Int` or `Object`. In this case, the code fails and is likely to cause a denial of service.  <br>**For example:** if an attacker pollutes `Object.prototype.toString` by defining it as an integer, if the codebase at any point was reliant on `someobject.toString()` it would fail. |\n |**Remote Code Execution**|Client|Remote code execution is generally only possible in cases where the codebase evaluates a specific attribute of an object, and then executes that evaluation.<br>**For example:** `eval(someobject.someattr)`. In this case, if the attacker pollutes `Object.prototype.someattr` they are likely to be able to leverage this in order to execute code.|\n|**Property Injection**|Client|The attacker pollutes properties that the codebase relies on for their informative value, including security properties such as cookies or tokens.<br>  **For example:** if a codebase checks privileges for `someuser.isAdmin`, then when the attacker pollutes `Object.prototype.isAdmin` and sets it to equal `true`, they can then achieve admin privileges.|\n\n## Affected environments\n\nThe following environments are susceptible to a Prototype Pollution attack:\n\n-   Application server\n    \n-   Web server\n\n-   Web browser\n    \n\n## How to prevent\n\n1.  Freeze the prototype— use `Object.freeze (Object.prototype)`.\n    \n2.  Require schema validation of JSON input.\n    \n3.  Avoid using unsafe recursive merge functions.\n    \n4.  Consider using objects without prototypes (for example, `Object.create(null)`), breaking the prototype chain and preventing pollution.\n    \n5.  As a best practice use `Map` instead of `Object`.\n\n### For more information on this vulnerability type:\n\n[Arteau, Olivier. “JavaScript prototype pollution attack in NodeJS application.” GitHub, 26 May 2018](https://github.com/HoLyVieR/prototype-pollution-nsec18/blob/master/paper/JavaScript_prototype_pollution_attack_in_NodeJS.pdf)\n\n## Remediation\nUpgrade `swiper` to version 12.1.2 or higher.\n## References\n- [GitHub Commit](https://github.com/nolimits4web/swiper/commit/d3e663322a13043ca63aaba235d8cf3900e0c8cf)\n- [GitHub Release](https://github.com/nolimits4web/swiper/releases/tag/v12.1.2)\n",
+      "epssDetails": {
+        "percentile": "0.23008",
+        "probability": "0.00078",
+        "modelVersion": "v2025.03.14"
+      },
+      "identifiers": {
+        "CVE": [
+          "CVE-2026-27212"
+        ],
+        "CWE": [
+          "CWE-1321"
+        ],
+        "GHSA": [
+          "GHSA-hmx5-qpq5-p643"
+        ]
+      },
+      "packageName": "swiper",
+      "proprietary": false,
+      "creationTime": "2026-02-20T09:44:04.944888Z",
+      "functions_new": [],
+      "alternativeIds": [],
+      "disclosureTime": "2026-02-19T20:28:35Z",
+      "exploitDetails": {
+        "sources": [],
+        "maturityLevels": [
+          {
+            "type": "secondary",
+            "level": "Not Defined",
+            "format": "CVSSv3"
+          },
+          {
+            "type": "primary",
+            "level": "Proof of Concept",
+            "format": "CVSSv4"
+          }
+        ]
+      },
+      "packageManager": "npm",
+      "publicationTime": "2026-02-20T09:44:05.209983Z",
+      "severityBasedOn": "CVSS",
+      "modificationTime": "2026-02-26T11:54:09.265666Z",
+      "socialTrendAlert": false,
+      "severityWithCritical": "critical",
+      "from": [
+        "onchat@0.0.1",
+        "swiper@8.0.3"
+      ],
+      "upgradePath": [
+        false,
+        "swiper@12.1.2"
+      ],
+      "isUpgradable": true,
+      "isPatchable": false,
+      "name": "swiper",
+      "version": "8.0.3"
+    },
+    {
+      "id": "SNYK-JS-WS-7266574",
+      "title": "Denial of Service (DoS)",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H/E:P",
+      "credit": [
+        "Ryan LaPointe"
+      ],
+      "semver": {
+        "vulnerable": [
+          ">=2.1.0 <5.2.4",
+          ">=6.0.0 <6.2.3",
+          ">=7.0.0 <7.5.10",
+          ">=8.0.0 <8.17.1"
+        ]
+      },
+      "exploit": "Proof of Concept",
+      "fixedIn": [
+        "5.2.4",
+        "6.2.3",
+        "7.5.10",
+        "8.17.1"
+      ],
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "js",
+      "severity": "high",
+      "cvssScore": 7.5,
+      "functions": [],
+      "malicious": false,
+      "isDisputed": false,
+      "moduleName": "ws",
+      "references": [
+        {
+          "url": "https://github.com/websockets/ws/commit/22c28763234aa75a7e1b76f5c01c181260d7917f",
+          "title": "GitHub Commit"
+        },
+        {
+          "url": "https://github.com/websockets/ws/commit/4abd8f6de4b0b65ef80b3ff081989479ed93377e",
+          "title": "GitHub Commit"
+        },
+        {
+          "url": "https://github.com/websockets/ws/commit/e55e5106f10fcbaac37cfa89759e4cc0d073a52c",
+          "title": "GitHub Commit"
+        },
+        {
+          "url": "https://github.com/websockets/ws/commit/eeb76d313e2a00dd5247ca3597bba7877d064a63",
+          "title": "GitHub Commit"
+        },
+        {
+          "url": "https://github.com/websockets/ws/issues/2230",
+          "title": "GitHub Issue"
+        },
+        {
+          "url": "https://github.com/websockets/ws/pull/2231",
+          "title": "GitHub PR"
+        },
+        {
+          "url": "https://github.com/websockets/ws/releases/tag/8.17.1",
+          "title": "GitHub Release"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "Red Hat",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 5.9,
+          "modificationTime": "2024-08-21T13:36:47.485619Z"
+        }
+      ],
+      "cvssSources": [
+        {
+          "type": "primary",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H/E:P",
+          "assigner": "Snyk",
+          "severity": "high",
+          "baseScore": 7.5,
+          "cvssVersion": "3.1",
+          "modificationTime": "2024-11-14T13:19:29.299224Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "assigner": "Red Hat",
+          "severity": "medium",
+          "baseScore": 5.9,
+          "cvssVersion": "3.1",
+          "modificationTime": "2024-08-21T13:36:47.485619Z"
+        }
+      ],
+      "description": "## Overview\n[ws](https://www.npmjs.com/package/ws) is a simple to use websocket client, server and console for node.js.\n\nAffected versions of this package are vulnerable to Denial of Service (DoS) when the number of received headers exceed the `server.maxHeadersCount` or `request.maxHeadersCount` threshold.\r\n\r\n## Workaround\r\n\r\nThis issue can be mitigating by following these steps:\r\n\r\n1. Reduce the maximum allowed length of the request headers using the `--max-http-header-size=size` and/or the `maxHeaderSize` options so\r\nthat no more headers than the `server.maxHeadersCount` limit can be sent.\r\n\r\n2. Set `server.maxHeadersCount` to 0 so that no limit is applied.\n## PoC\n```js\r\n\r\nconst http = require('http');\r\nconst WebSocket = require('ws');\r\n\r\nconst server = http.createServer();\r\n\r\nconst wss = new WebSocket.Server({ server });\r\n\r\nserver.listen(function () {\r\n  const chars = \"!#$%&'*+-.0123456789abcdefghijklmnopqrstuvwxyz^_`|~\".split('');\r\n  const headers = {};\r\n  let count = 0;\r\n\r\n  for (let i = 0; i < chars.length; i++) {\r\n    if (count === 2000) break;\r\n\r\n    for (let j = 0; j < chars.length; j++) {\r\n      const key = chars[i] + chars[j];\r\n      headers[key] = 'x';\r\n\r\n      if (++count === 2000) break;\r\n    }\r\n  }\r\n\r\n  headers.Connection = 'Upgrade';\r\n  headers.Upgrade = 'websocket';\r\n  headers['Sec-WebSocket-Key'] = 'dGhlIHNhbXBsZSBub25jZQ==';\r\n  headers['Sec-WebSocket-Version'] = '13';\r\n\r\n  const request = http.request({\r\n    headers: headers,\r\n    host: '127.0.0.1',\r\n    port: server.address().port\r\n  });\r\n\r\n  request.end();\r\n});\r\n\r\n```\n\n## Details\n\nDenial of Service (DoS) describes a family of attacks, all aimed at making a system inaccessible to its intended and legitimate users.\n\nUnlike other vulnerabilities, DoS attacks usually do not aim at breaching security. Rather, they are focused on making websites and services unavailable to genuine users resulting in downtime.\n\nOne popular Denial of Service vulnerability is DDoS (a Distributed Denial of Service), an attack that attempts to clog network pipes to the system by generating a large volume of traffic from many machines.\n\nWhen it comes to open source libraries, DoS vulnerabilities allow attackers to trigger such a crash or crippling of the service by using a flaw either in the application code or from the use of open source libraries.\n\nTwo common types of DoS vulnerabilities:\n\n* High CPU/Memory Consumption- An attacker sending crafted requests that could cause the system to take a disproportionate amount of time to process. For example, [commons-fileupload:commons-fileupload](https://security.snyk.io/vuln/SNYK-JAVA-COMMONSFILEUPLOAD-30082).\n\n* Crash - An attacker sending crafted requests that could cause the system to crash. For Example,  [npm `ws` package](https://snyk.io/vuln/npm:ws:20171108)\n\n## Remediation\nUpgrade `ws` to version 5.2.4, 6.2.3, 7.5.10, 8.17.1 or higher.\n## References\n- [GitHub Commit](https://github.com/websockets/ws/commit/22c28763234aa75a7e1b76f5c01c181260d7917f)\n- [GitHub Commit](https://github.com/websockets/ws/commit/4abd8f6de4b0b65ef80b3ff081989479ed93377e)\n- [GitHub Commit](https://github.com/websockets/ws/commit/e55e5106f10fcbaac37cfa89759e4cc0d073a52c)\n- [GitHub Commit](https://github.com/websockets/ws/commit/eeb76d313e2a00dd5247ca3597bba7877d064a63)\n- [GitHub Issue](https://github.com/websockets/ws/issues/2230)\n- [GitHub PR](https://github.com/websockets/ws/pull/2231)\n- [GitHub Release](https://github.com/websockets/ws/releases/tag/8.17.1)\n",
+      "epssDetails": {
+        "percentile": "0.67650",
+        "probability": "0.00541",
+        "modelVersion": "v2025.03.14"
+      },
+      "identifiers": {
+        "CVE": [
+          "CVE-2024-37890"
+        ],
+        "CWE": [
+          "CWE-400"
+        ]
+      },
+      "packageName": "ws",
+      "proprietary": false,
+      "creationTime": "2024-06-17T14:34:03.689299Z",
+      "functions_new": [],
+      "alternativeIds": [],
+      "disclosureTime": "2024-06-16T13:35:43Z",
+      "exploitDetails": {
+        "sources": [
+          "Snyk"
+        ],
+        "maturityLevels": [
+          {
+            "type": "secondary",
+            "level": "Proof of Concept",
+            "format": "CVSSv3"
+          },
+          {
+            "type": "primary",
+            "level": "Proof of Concept",
+            "format": "CVSSv4"
+          }
+        ]
+      },
+      "packageManager": "npm",
+      "publicationTime": "2024-06-17T14:34:03.928602Z",
+      "severityBasedOn": "CVSS",
+      "modificationTime": "2024-11-14T13:19:29.299224Z",
+      "socialTrendAlert": false,
+      "severityWithCritical": "high",
+      "from": [
+        "onchat@0.0.1",
+        "ngx-socketio2@1.0.0",
+        "socket.io-client@4.4.0",
+        "engine.io-client@6.1.1",
+        "ws@8.2.3"
+      ],
+      "upgradePath": [
+        false,
+        "ngx-socketio2@2.0.1",
+        "socket.io-client@4.8.3",
+        "engine.io-client@6.6.4",
+        "ws@8.18.3"
+      ],
+      "isUpgradable": true,
+      "isPatchable": false,
+      "name": "ws",
+      "version": "8.2.3"
+    }
+  ],
+  "ok": false,
+  "dependencyCount": 69,
+  "org": "arianfarzad",
+  "policy": "# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.\nversion: v1.25.1\nignore: {}\npatch: {}\n",
+  "isPrivate": true,
+  "licensesPolicy": {
+    "severities": {},
+    "orgLicenseRules": {
+      "AGPL-1.0": {
+        "licenseType": "AGPL-1.0",
+        "severity": "high",
+        "instructions": ""
+      },
+      "AGPL-3.0": {
+        "licenseType": "AGPL-3.0",
+        "severity": "high",
+        "instructions": ""
+      },
+      "Artistic-1.0": {
+        "licenseType": "Artistic-1.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "Artistic-2.0": {
+        "licenseType": "Artistic-2.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "CDDL-1.0": {
+        "licenseType": "CDDL-1.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "CPOL-1.02": {
+        "licenseType": "CPOL-1.02",
+        "severity": "high",
+        "instructions": ""
+      },
+      "EPL-1.0": {
+        "licenseType": "EPL-1.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "GPL-2.0": {
+        "licenseType": "GPL-2.0",
+        "severity": "high",
+        "instructions": ""
+      },
+      "GPL-3.0": {
+        "licenseType": "GPL-3.0",
+        "severity": "high",
+        "instructions": ""
+      },
+      "LGPL-2.0": {
+        "licenseType": "LGPL-2.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "LGPL-2.1": {
+        "licenseType": "LGPL-2.1",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "LGPL-3.0": {
+        "licenseType": "LGPL-3.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "MPL-1.1": {
+        "licenseType": "MPL-1.1",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "MPL-2.0": {
+        "licenseType": "MPL-2.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "MS-RL": {
+        "licenseType": "MS-RL",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "SimPL-2.0": {
+        "licenseType": "SimPL-2.0",
+        "severity": "high",
+        "instructions": ""
+      }
+    }
+  },
+  "packageManager": "npm",
+  "ignoreSettings": {
+    "adminOnly": false,
+    "reasonRequired": false,
+    "disregardFilesystemIgnores": false
+  },
+  "summary": "9 vulnerable dependency paths",
+  "remediation": {
+    "unresolved": [],
+    "upgrade": {
+      "@angular/common@13.2.2": {
+        "upgradeTo": "@angular/common@19.2.16",
+        "upgrades": [
+          "@angular/common@13.2.2"
+        ],
+        "vulns": [
+          "SNYK-JS-ANGULARCOMMON-14135651"
+        ]
+      },
+      "@angular/core@13.2.2": {
+        "upgradeTo": "@angular/core@19.2.20",
+        "upgrades": [
+          "@angular/core@13.2.2",
+          "@angular/core@13.2.2",
+          "@angular/core@13.2.2"
+        ],
+        "vulns": [
+          "SNYK-JS-ANGULARCORE-15610287",
+          "SNYK-JS-ANGULARCORE-15353393",
+          "SNYK-JS-ANGULARCORE-14908871"
+        ]
+      },
+      "ngx-socketio2@1.0.0": {
+        "upgradeTo": "ngx-socketio2@2.0.1",
+        "upgrades": [
+          "socket.io-parser@4.1.2",
+          "socket.io-parser@4.1.2",
+          "socket.io-parser@4.1.2",
+          "ws@8.2.3"
+        ],
+        "vulns": [
+          "SNYK-JS-SOCKETIOPARSER-15680278",
+          "SNYK-JS-SOCKETIOPARSER-3091012",
+          "SNYK-JS-SOCKETIOPARSER-5596892",
+          "SNYK-JS-WS-7266574"
+        ]
+      },
+      "swiper@8.0.3": {
+        "upgradeTo": "swiper@12.1.2",
+        "upgrades": [
+          "swiper@8.0.3"
+        ],
+        "vulns": [
+          "SNYK-JS-SWIPER-15322690"
+        ]
+      }
+    },
+    "patch": {},
+    "ignore": {},
+    "pin": {}
+  },
+  "filesystemPolicy": false,
+  "filtered": {
+    "ignore": [],
+    "patch": []
+  },
+  "uniqueCount": 9,
+  "projectName": "onchat",
+  "displayTargetFile": "package-lock.json",
+  "hasUnknownVersions": false,
+  "path": "/app"
+}
